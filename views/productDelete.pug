@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    hr
+    p Nom : #{product.name}
+    p  Catégorie : #{categorie}
+    p  Prix : #{product.price} €
+    p  Description : #{product.description}
+    hr
+    p.font-weight-bold Etes vous sûr de vouloir supprimer ce produit ?
+    button.btn.btn-primary(type='submit')  Supprimer le produit
+    p
+    button.btn.btn-primary(type='submit')  Annuler
